@@ -1,0 +1,9 @@
+services:
+  dpql-app:
+    container_name: dpql-app
+    build: .
+    ports:
+      - "8080:8080"
+      - "5173:5173"
+    environment:
+      - NODE_ENV=production
